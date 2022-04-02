@@ -4,23 +4,8 @@
 
 ## How to use
 
-### 1. Start directly
-
-Container will be removed including downloaded files when stopped.
+Podman as example:
 
 ```bash
-x11docker -- baidunetdisk
+x11docker --home=/path/to/home --backend=podman --network=bridge -- erinacio/baidunetdisk
 ```
-
-### 2. Redirect home directory to host
-
-```bash
-x11docker --home="$HOME/Downloads/baidunetdisk/" -- erinacio/baidunetdisk
-```
-
-### 3. Force using root container with podman
-
-```bash
-x11docker --home="$HOME/Downloads/baidunetdisk/" --pw=sudo -- erinacio/baidunetdisk
-```
-
